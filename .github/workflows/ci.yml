@@ -1,13 +1,13 @@
 name: CI with Docker Compose
 
 on:
-push:
+  push:
    branches:
      - main
-pull_request:
+  pull_request:
 
 jobs:
-docker-ci:
+  build-and-test:
    runs-on: ubuntu-latest
 
    steps:
